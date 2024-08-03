@@ -1,0 +1,106 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        white: "#fff",
+        gray: {
+          "100": "#919191",
+          "200": "#8f8f8f",
+          "300": "#8e8e8e",
+          "400": "#898989",
+          "500": "#878787",
+          "600": "#0d0700",
+        },
+        darkgray: {
+          "100": "#afafaf",
+          "200": "#a1a1aa",
+          "300": "#a1a1a1",
+          "400": "#979797",
+        },
+        mediumseagreen: "#059551",
+        black: "#000",
+        gainsboro: {
+          "100": "#e4e4e7",
+          "200": "#d9d9d9",
+        },
+        whitesmoke: {
+          "100": "#f5f5f5",
+          "200": "#f5f3f3",
+        },
+        seagreen: "#006837",
+        gold: "#facb1d",
+        blueviolet: "#6144f3",
+        silver: "#bfbfbf",
+      },
+      spacing: {},
+      fontFamily: {
+        inter: "Inter",
+        poppins: "Poppins",
+      },
+      borderRadius: {
+        "3xl": "22px",
+        "12xl": "31px",
+        "2xl-5": "21.5px",
+        "8xs": "5px",
+        "11xl": "30px",
+        mini: "15px",
+        "14xl": "33px",
+        "2xl-3": "21.3px",
+        "39xl": "58px",
+      },
+    },
+    fontSize: {
+      base: "16px",
+      smi: "13px",
+      "6xl": "25px",
+      xl: "20px",
+      "13xl": "32px",
+      "7xl": "26px",
+      lgi: "19px",
+      "5xl": "24px",
+      "23xl": "42px",
+      "15xl": "34px",
+      "3xl-2": "22.2px",
+      lg: "18px",
+      "lgi-9": "19.9px",
+      "18xl": "37px",
+      "11xl": "30px",
+      "3xl": "22px",
+      "4xl-7": "23.7px",
+      "9xl": "28px",
+      "lgi-6": "19.6px",
+      "4xl-9": "23.9px",
+      "16xl": "35px",
+      "2xl": "21px",
+      "xl-1": "20.1px",
+      "base-4": "16.4px",
+      "29xl": "48px",
+      "19xl": "38px",
+      "10xl": "29px",
+      mid: "17px",
+      inherit: "inherit",
+    },
+    screens: {
+      mq1825: {
+        raw: "screen and (max-width: 1825px)",
+      },
+      mq1350: {
+        raw: "screen and (max-width: 1350px)",
+      },
+      mq925: {
+        raw: "screen and (max-width: 925px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
